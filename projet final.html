@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Personnel</title>
+    <link rel="stylesheet" href="projet final.css">
+</head>
+<body>
+   <header class="header">
+    <div class="logo">
+        <span>KONE <span class="highlight">KADIDIATOU</span></span>
+    </div>
+    <nav class="navigation">
+        <ul>
+        <li><a href="#Accueil">Accueil</a></li>
+        <li><a href="#A propos">A Propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+   </header> 
+   <main class="main">
+    <h1>Bienvenue Sur Ma Page</h1>
+    <section id="Accueil" class="section-accueil">
+        <div class="text">
+            <p>Je suis <span class="highlight">KADIDIATOU</span>, Dévellopeur en devenir passioné par le web et le design!</p>
+            <p>Ce site présente mes projets, mes compétences et mon parcours.</p>
+    
+            <button onclick="location.href='#projets'">Voir mes projets</button>
+        </div>
+        <div class="image">
+            <img src="illustration-concept-creativite-plat_52683-64279.webp">
+        </div>
+        
+    </section>
+   </main>
+
+   <main id="A propos" class="main">
+    <h1>A Propos</h1>
+    <section class="section-propos">
+        <div class="text"> 
+            <p>Je suis KADIDIATOU une étudiante passioné qui transforme des lignes de code en expériences intéractives.</p>
+            <p>Exploratrice du monde du web,je mêle créativité et technologie pour concevoir de petit monde fascinant.</p>
+            <p>Ici, vous découvriez mes projets, mes idées et ma vision pour un web plus innovant et expirant.Que vous soyez curieux, collaborateur  potentiel ou en quête d'inspiration, j'espére que cet espace vous captivera autant que le web me fascine.</p>
+           
+            <a href="cv kadia - Copie - Copie.pdf" download="CV kady" class="cv">
+                Télécharger mon CV
+            </a>
+        </div>
+        <div class="image">
+            <img src="IMG_20240718_163422_673.jpg" id="spherique">
+        </div>
+    </section>
+   </main>
+
+   <main id="competences" class="main">
+    <h1>Mes Compétences</h1>
+    <section class="section-competence">
+        <div>
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Gestion de projets
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </li>
+                <li>Productivité
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </li>
+                <li>Travail d'équipe
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>Hard Skills</h2>
+            <ul>
+                <li>HTML
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </li>
+                <li>CSS
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </li>
+                <li>Javascripte
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </section>
+   </main>
+
+   <main id="projets" class="main">
+    <h1>Mes Projets</h1>
+    <section class="section-projet">
+
+        <div class="projet">
+            <p>Conception d'une horloge numérique qui se met à jour toutes les millisecondes.".</p>
+            <a href="projet 1/temps_reel.html" target="_blank" class="view">
+                Voir
+            </a>
+          </div>
+          <div class="projet">
+            <p>Elaboration d'un petit programme permettant de mesurer la longueur d'une chaine de caractére.</p>
+            <a href="projet 2/Exercice 1.html" target="_blank" class="view">
+                Voir
+            </a>
+          </div>
+          <div class="projet">
+            <p>Développement d'un petit programme compact pour effectuer des calculs mathématiques basiques.</p>
+            <a href="projet 3/Exercice 2.html" target="_blank" class="view">
+                Voir
+            </a>
+        </div>
+
+    </section>
+   </main>
+
+   <main class="main">
+    <section id="contact" class="section-contact" id="form">
+        <h2>Pour tout vos projet, veuillez me laissez un message</h2>
+
+        <form class="tact" id="contactForm" onsubmit="afficherRemerciement(event)">
+            <div class="form-group"> 
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom">
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prenom:</label>
+                <input type="text" id="prenom">
+            </div>
+            <div class="form-group">
+                <label for="numero">Télephone:</label>
+                <input type="tel" id="numero">
+            </div>
+            <div class="form-group">
+                <label for="mail">Email:</label>
+                <input type="email" id="mail">
+            </div>
+            <div class="form-group">
+                <label for="sujet">Sujet:</label>
+                <input type="text" id="sujet">
+            </div>
+            <div class="form-group">
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    
+    </section>
+</main>
+
+<footer class="Page">
+    <p>&copy; Tous droits réservés-2025</p>
+</footer>
+
+
+
+
+
+<script src="projet final.js"></script>
+
+
+</body>
+</html>
